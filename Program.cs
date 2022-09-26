@@ -1,4 +1,10 @@
+using ApiVersionControl.Entities;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+// add api test settings
+builder.Services.Configure<ApiTestSettings>(builder.Configuration.GetSection("ApiTest"));
 
 // Add services to the container.
 
