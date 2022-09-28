@@ -44,7 +44,7 @@ namespace ApiVersionControl
 
         public void Configure(string name, SwaggerGenOptions options)
         {
-            throw new NotImplementedException();
+            Configure(options);
         }
 
     }
